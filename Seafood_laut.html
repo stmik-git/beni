@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Web Beni</title>
+    <style type="text/css">
+       {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: gainsboro;
+      }
+
+      .badan-utama {
+        max-width: 1080px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 15px;
+        overflow: hidden;
+      }
+
+      header {
+        background-color: crimson;
+        color: white;
+        padding: 20px;
+      }
+
+      header h2 {
+        margin-bottom: 7px;
+        font-size: 35px;
+      }
+
+      .navigasi ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkorange;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .navigasi li {
+        float: left;
+      }
+
+      .navigasi li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      .navigasi li a:hover {
+        background-color: red;
+        transition-duration: 2s;
+      }
+
+      .banner {
+        margin-bottom: 15px;
+      }
+
+      .banner img {
+        display: block;
+        width: 100%;
+        height: 330px;
+      }
+
+      .kotak {
+        border: 1px solid gainsboro;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      .kotak h3 {
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 13px;
+      }
+
+      .kotak img {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .kotak p {
+        margin-bottom: 10px;
+      }
+
+      .menu-kiri {
+        width: 250px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah {
+        width: 530px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah h3 {
+        background: none;
+        color: crimson;
+        margin-bottom: 0;
+      }
+
+      .tanggal-posting {
+        color: gray;
+        text-align: right;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .tombol {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        width: 120px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .tombol:hover {
+        background-color: black;
+        transition-duration: 2s;
+      }
+
+      .tombol-pesan {
+        background-color: green;
+      }
+
+      .tombol-lengkap {
+        background-color: darkorange;
+      }
+
+      .menu-kanan {
+        width: 250px;
+        float: left;
+      }
+
+      .menu-kanan,
+      .menu-kiri,
+      .menu-tengah {
+        margin-bottom: 15px;
+      }
+
+      footer {
+        clear: both;
+        background-color: crimson;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .menu-artikel ul {
+        list-style-type: none;
+      }
+
+      .menu-artikel ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 13px;
+        border-bottom: 1px solid gainsboro;
+        margin-bottom: 12px;
+        color: black;
+      }
+
+      .menu-artikel ul li a:hover {
+        color: darkorange;
+        border-bottom: 5px double chocolate;
+        transition-duration: 2s;
+      }
+
+      /*untuk tablet*/
+      @media screen and (max-width: 1080px) {
+        .badan-utama {
+          width: 100%;
+        }
+
+        .menu-kiri {
+          width: 25%;
+        }
+
+        .menu-tengah {
+          width: 68%;
+          float: right;
+        }
+
+        .menu-kanan {
+          clear: both;
+          float: none;
+          width: 100%;
+        }
+      }
+
+      /*untuk android*/
+      @media screen and (max-width: 780px) {
+        header h2,
+        header p {
+          text-align: center;
+        }
+
+        .menu-kiri,
+        .menu-kanan,
+        .menu-tengah {
+          float: none;
+          width: 100%;
+        }
+
+        .navigasi li {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badan-utama">
+      <header>
+        <h2>Web Seafood</h2>
+        <p>Web Untuk Mengetahui segala jenis-jenis Seafood</p>
+      </header>
+
+      <nav class="navigasi">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pesan.html">Pesan</a></li>
+          <li><a href="Seafood_laut.html">Seafood Laut</a></li>
+          <li><a href="Seafood_sungai.html">Seafood Sungai</a></li>
+          <li><a href="Seafood_tawar.html">Seafood Tawar</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-kiri">
+        <div class="kotak">
+          <h3>Pemesanan</h3>
+          <p>Isi Form Pemesanan dengan Klik Tombol di bawah ini</p>
+
+          <a class="tombol tombol-pesan" href="#">Pesan</a>
+        </div>
+      </div>
+
+      <div class="menu-tengah">
+        <div class="kotak">
+          <h3>Jenis-Jenis Seafood Laut</h3>
+          <span class="tanggal-posting"> Diposting pada 11.04 WIB, 29 April 2022 </span>
+
+          <img src="https://awsimages.detik.net.id/community/media/visual/2018/10/25/960f9cb0-b55a-44a0-a466-a73a35134783.jpeg?w=650&q=90" alt="Sate Ayam" />
+
+          <p>
+            <b>Jenis Seafood Laut</b><br />
+            Berikut jenis Seafood air laut untuk dikonsumsi dan manfaatnya untuk kesehatan:<br />
+            1. Seafood Trout<br />
+            Secara fisik, Seafood trout bentuknya hampir sama dengan Seafood salmon. Mengutip dari sehatq.com, 100 gram Seafood trout mengandung 19,94 gram protein dan 4,3 microgram vitamin B12. Seafood trout baik dikonsumsi karena rendah
+            merkuri.
+            <br /><br />
+            2. Cakalang<br />
+            Seafood Cakalang banyak ditemukan di perairan Indonesia. Habitat Seafood ini berada di Samudra Hindia, Pasifik, dan Samudra Atlantik. Seafood cakalang mengandung asam lemak omega-3 dan protein. Manfaat konsumsi Seafood cakalang
+            yaitu mengurangi resiko demensia dan menurunkan kadar gula darah.<br /><br />
+
+            3. Seafood Bawal Air Laut<br />
+            Seafood bawal dibedakan menjadi Seafood bawal air tawar dan air laut. Bentuk Seafood bawal air laut pipih dan memiliki sirip dada di belakang insang. Seafood bawal kaya nutrisi seperti mineral, kalsium, vitamin, omega-3, dan
+            fosfor.
+            <br />
+            Seafood bawal mengandung asam lemak tidak jenuh yang baik untuk dikonsumsi. Selain itu, Seafood ini bisa mencegah kolesterol, menyehatkan jantung, dan menjaga tekanan darah.<br />
+            <br /><br />
+            4. Seafood Kakap Seafood kakap merah dan kakap putih biasanya disajSeafood dalam restoran dan rumah makan. Seafood ini memiliki besar dan dagingnya banyak. Seafood kakap mengandung lemak tidak jenuh salah satunya asam lemak
+            omega-3. Selain itu Seafood kakap mengandung mineral seperti fosfor, kalsium, seng, dan zat besi. Ada juga vitamin yang memenuhi gizi tubuh.
+            <br />
+            9 Manfaat Seafood Salmon Lengkap dengan Kandungan Nutrisinya<br /><br />
+            5. Sarden<br />
+            Seafood sarden umumnya dijadSeafood makanan kaleng atau dalam kemasan. Menurut para ahli, nutrisi dalam tubuh Seafood sarden yaitu kalsium, zat besi, protein, asam lemak omega-3, dan vitamin B12.<br />
+
+            Seafood sarden baik dikonsumsi untuk menjaga fungsi otak dan memperbaiki suasana hati. Konsumsi Seafood ini bisa mencegah kecemasan, depresi, dan kesehatan mental. Selain itu, Seafood sarden mengandung vitamin D yang baik untuk
+            kesehatan dan kepadatan tulang.<br />
+            <br />
+            6. Salmon<br />
+            Salmon (Oncorhynchus nerka) memiliki daging yang berwarna oranye atau merah tua. Seafood salmon memiliki asam lemak omega-6 dan asam lemak omega-3. Ada beragam manfaat Seafood salmon yang baik untuk mencegah peradangan, mengatur
+            pembekuan darah, menjaga kesehatan kulit, dan meningkatkan kesehatan jantung.<br /><br />
+
+            7. Tuna<br />
+            Nutrisi dalam Seafood tuna adalah vitamin B3, niacin, protein, fosfor, vitamin D, kalium, dan yodium. Di Indonesia Seafood tuna banyak dikonsumsi dan dijual dipasaran. Seafood berukuran besar ini di Jepang diolah menjadi makanan
+            khas Jepang sushi dan sashimi.
+            <br />
+            Seafood tuna dibagi menjadi beberapa jenis yaitu Seafood tuna Albakora, Seafood tuna Sirip Kuning, Seafood tuna Sirip Hitam, Seafood tuna Sirip Biru Selatan, Seafood tuna mata besar, Seafood tongkol, dan cakalang.<br />
+            <br /><br />
+            8. Seafood Teri<br />
+            Seafood teri termasuk Seafood berukuran kecil untuk dimasak menjadi sayur, tumis, hingga keripik. Meski berukuran kecil, Seafood teri baik untuk dikonsumsi anak-anak dan menjaga kesehatan jantung.<br />
+
+            Seafood teri tidak mengandung gula dan karbohidrat sehingga aman untuk dikonsumsi penderita diabetes. Selain itu, Seafood teri mengandung omega-3 yang baik untuk menjaga pertumbuhan otak pada anak-anak.<br />
+
+            7 Manfaat Seafood untuk Kesehatan dan Tips Memilih Seafood Segar<br /><br />
+            9. Layur<br />
+            Seafood layur tubuhnya ramping, panjang, memiliki banyak gigi, dan warnanya perak. Seafood layur ditemukan di tengah laut dan biasanya hidup berkelompok. Panjang Seafood layur umumnya tidak sampai 1 meter. Layur mengandung
+            vitamin dan protein yang baik untuk tubuh. Manfaat layur yaitu mencegah penyakit gondok, mengobati radang, dan menjaga berat badan.
+            <br /><br />
+            10. Tenggiri<br />
+            Seafood tenggirir biasanya menjadi lauk makanan, sayur, sampai keripik. Ciri khas Seafood tenggiri adalah memiliki warna putih dan rasanya kuat. Seafood ini mengandung lemak sehat, omega-3, dan vitamin B12.
+            <br /><br />
+            11. Kerapu<br />
+            Seafood kerapu saat ini banyak dibudidaya untuk dijual dan dikonsumsi. Seafood kerapu termasuk jenis Seafood yang dagingnya gurih untuk diolah menjadi sup Seafood, sayur, dan lauk. Jenis Seafood kerapu yaitu Seafood kerapu
+            macan, lumpur, kerapu batik, kerapu muara, dan kerapu merah.
+            <br />
+            Seafood kerapu dapat menurunkan tekanan darah karena mengandung asam lemak omega-3. Kandungan protein pada Seafood dapat menekan nafsu makan, meningkatkan metabolisme, dan menjaga kesehatan tulang.
+          </p>
+
+          <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="menu-kanan">
+        <div class="kotak">
+          <h3>Berita Terbaru</h3>
+
+          <nav class="menu-artikel">
+            <ul>
+              <li><a href="#">Khasiat Daging Ubur-Ubur</a></li>
+              <li><a href="#">Menu MakananSeaFood</a></li>
+              <li><a href="#">Sejarah pembuatan Air Laut</a></li>
+              <li><a href="#">Minuman dari seafood</a></li>
+              <li><a href="#">Ayam Geprek Seafood</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <footer>Tugas Web By Beni</footer>
+    </div>
+  </body>
+</html>

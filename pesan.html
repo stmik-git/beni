@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pesan Ikan - Beni Araffat Andrifiyan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var nomor = 0;
+
+        $("#formagama").hide();
+        $("#btn2").click(function () {
+          var nim, nama, jeniskel, alamat, agama, nikah, pekerjaan;
+          npm = $("#nik").val();
+          nama = $("#nama").val();
+          jeniskel = $("#jeniskel").val();
+          alamat = $("#alamat").val();
+          agama = $("#pilihagama").val();
+          nikah = $("#status").val();
+          pekerjaan = $("#kerja").val();
+
+          nomor++;
+          $("#listdata").append("<tr><td>" + nomor + "</td><td>" + npm + "</td><td>" + nama + "</td><td>" + alamat + "</td></tr>");
+        });
+
+      
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>Web Seafood</h2>
+      <p>Web Untuk Mengetahui segala jenis-jenis Seafood</p>
+    </header>
+
+    <nav class="navigasi">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="pesan.html">Pesan</a></li>
+        <li><a href="Seafood_laut.html">Seafood Laut</a></li>
+        <li><a href="Seafood_sungai.html">Seafood Sungai</a></li>
+        <li><a href="Seafood_tawar.html">Seafood Tawar</a></li>
+      </ul>
+    </nav>
+
+      <div class="menu-kiri">
+        <div class="kotak-Beni">
+          <h3>Pemesanan</h3>
+          <p>Silahkan isi formulir untuk memesan</p>
+        </div>
+      </div>
+
+      <div class="menu-tengah">
+        <div class="kotak-Beni">
+          <h1>Form Pemesanan</h1>
+
+          <table id="formdata" align="center" width="100%">
+            <tr>
+              <td>NIK</td>
+              <td><input type="text" id="nik" /></td>
+            </tr>
+            <tr>
+              <td>Nama Lengkap</td>
+              <td><input type="text" id="nama" /></td>
+            </tr>
+
+            <tr>
+              <td>Alamat</td>
+              <td><input type="text" id="alamat" /></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                <br />
+                <button id="btn1" class="tombol tombol-lengkap">Baru</button><br />
+                <button id="btn2" class="tombol tombol-lengkap">Simpan</button>
+              </td>
+            </tr>
+          </table>
+          <br /><br /><br />
+
+          <table id="listdata" align="center" style="max-width: 900" cellspacing="0px" cellpadding="5px" border="1px">
+            <tr>
+              <th th width="40px">NO</th>
+              <th th width="40px" id="btnhilang">NIK</th>
+              <th width="160px">Nama Lengkap</th>
+              <th width="100px">Alamat</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="menu-kanan">
+        <div class="kotak-Beni">
+          <h3>Berita Terbaru</h3>
+
+          <nav class="menu-artikel">
+            <ul>
+              <li><a href="ikan_tawar.html">Jenis Jenis Ikan Tawar</a></li>
+              <li><a href="ikan_sungai.html">Jenis Jenis Ikan Sungai</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <footer>Tugas Web By Beni</footer>
+    </div>
+  </body>
+</html>

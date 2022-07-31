@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Web Beni</title>
+    <style type="text/css">
+       {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: gainsboro;
+      }
+
+      .badan-utama {
+        max-width: 1080px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 15px;
+        overflow: hidden;
+      }
+
+      header {
+        background-color: crimson;
+        color: white;
+        padding: 20px;
+      }
+
+      header h2 {
+        margin-bottom: 7px;
+        font-size: 35px;
+      }
+
+      .navigasi ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkorange;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .navigasi li {
+        float: left;
+      }
+
+      .navigasi li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      .navigasi li a:hover {
+        background-color: red;
+        transition-duration: 2s;
+      }
+
+      .banner {
+        margin-bottom: 15px;
+      }
+
+      .banner img {
+        display: block;
+        width: 100%;
+        height: 330px;
+      }
+
+      .kotak {
+        border: 1px solid gainsboro;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      .kotak h3 {
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 13px;
+      }
+
+      .kotak img {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .kotak p {
+        margin-bottom: 10px;
+      }
+
+      .menu-kiri {
+        width: 250px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah {
+        width: 530px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah h3 {
+        background: none;
+        color: crimson;
+        margin-bottom: 0;
+      }
+
+      .tanggal-posting {
+        color: gray;
+        text-align: right;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .tombol {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        width: 120px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .tombol:hover {
+        background-color: black;
+        transition-duration: 2s;
+      }
+
+      .tombol-pesan {
+        background-color: green;
+      }
+
+      .tombol-lengkap {
+        background-color: darkorange;
+      }
+
+      .menu-kanan {
+        width: 250px;
+        float: left;
+      }
+
+      .menu-kanan,
+      .menu-kiri,
+      .menu-tengah {
+        margin-bottom: 15px;
+      }
+
+      footer {
+        clear: both;
+        background-color: crimson;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .menu-artikel ul {
+        list-style-type: none;
+      }
+
+      .menu-artikel ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 13px;
+        border-bottom: 1px solid gainsboro;
+        margin-bottom: 12px;
+        color: black;
+      }
+
+      .menu-artikel ul li a:hover {
+        color: darkorange;
+        border-bottom: 5px double chocolate;
+        transition-duration: 2s;
+      }
+
+      /*untuk tablet*/
+      @media screen and (max-width: 1080px) {
+        .badan-utama {
+          width: 100%;
+        }
+
+        .menu-kiri {
+          width: 25%;
+        }
+
+        .menu-tengah {
+          width: 68%;
+          float: right;
+        }
+
+        .menu-kanan {
+          clear: both;
+          float: none;
+          width: 100%;
+        }
+      }
+
+      /*untuk android*/
+      @media screen and (max-width: 780px) {
+        header h2,
+        header p {
+          text-align: center;
+        }
+
+        .menu-kiri,
+        .menu-kanan,
+        .menu-tengah {
+          float: none;
+          width: 100%;
+        }
+
+        .navigasi li {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badan-utama">
+      <header>
+        <h2>Web Seafood</h2>
+        <p>Web Untuk Mengetahui segala jenis-jenis Seafood</p>
+      </header>
+
+      <nav class="navigasi">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pesan.html">Pesan</a></li>
+          <li><a href="Seafood_laut.html">Seafood Laut</a></li>
+          <li><a href="Seafood_sungai.html">Seafood Sungai</a></li>
+          <li><a href="Seafood_tawar.html">Seafood Tawar</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-kiri">
+        <div class="kotak">
+          <h3>Pemesanan</h3>
+          <p>Isi Form Pemesanan dengan Klik Tombol di bawah ini</p>
+
+          <a class="tombol tombol-pesan" href="#">Pesan</a>
+        </div>
+      </div>
+
+      <div class="menu-tengah">
+        <div class="kotak">
+          <h3>Jenis-Jenis Seafood Tawar</h3>
+          <span class="tanggal-posting"> Diposting pada 11.04 WIB, 29 April 2022 </span>
+
+          <img src="https://c.inilah.com/2022/02/0208_054253_0dcf_inilah.com_.jpg" alt="Seafood Tawar" />
+
+          <p>
+            1. Seafood Tor<br />
+
+            Sumber: pui-Seafoodhias.id Nama Seafood tor tidak terlalu terkenal di kalangan masyarakat secara luas, nama Seafood ini hanya dikenal dikalangan masyarakat tertentu saja. Bahkan dibeberapa daerah Seafood jenis ini tidak konsumsi
+            karena dianggap sesuatu yang sakral. Sebagai contoh di Kuningan Jawa Barat, Seafood tor dikenal dengan nama Seafood kramat. Selain di Kuningan, Seafood tor juga bisa ditemui di beberapa daerah di Indonesia seperti Sumatera
+            Utara, Sumatera Barat dan Sumatera Selatan. Masing-masing daerah ini pun menamai Seafood ini dengan nama berbeda-beda. Menurut beberapa referensi yang ditemukan, Seafood tor atau pedih ini merupakan Seafood yang berasal dari
+            Aceh. Nama pedih sendiri diartSeafood sebagai ‘raja’, sehingga sebagian orang menyebutnya dengan nama Seafood raja. Nama tersebut bukanlah tanpa alasan, konon katanya dahulu yang boleh mengonsumsi Seafood ini hanya dari kalangan
+            raja dan bangsawan saja. Seafood Tor bisa terbilang sulit ditemukan. Biasanya harga Seafood ini juga cukup terbilang tinggi yakni sekitar Rp.650.000,00/kg.
+            <br /><br />
+            2. Seafood Tawes<br />
+
+            Sumber: usatpandang.com Tawes adalah jenis Seafood yang sangat mudah kita temukan. Hampir setiap daerah mengenali jenis Seafood ini. Seafood tawes merupakan salah satu Seafood yang sering diawetkan dengan cara diasinkan. Jika
+            dilihat dari bentuk, Seafood tawes memiliki kemiripan dengan Seafood nilem.
+            <br /><br />
+            3. Seafood Toman
+            <br />
+            Sumber: wikipedia Kalau Seafood satu ini sangat digemari sekali oleh para pemancing. Sebab, konon Seafood Toman memiliki tenaga yang kuat. Biasanya Seafood toman memiliki habitat di sungai-sungai, seperti perairan di Kalimantan
+            dan Sumatera. Selain digemari oleh para pemancing, jenis Seafood air tawar ini juga cukup sering dijadSeafood menu santapan masyarakat dengan cara dimasak gulai, bakar atau sup. Toman memiliki daging yang lembut dengan warna
+            putih bersih. Selain itu, keunSeafood lain dari Seafood toman yaitu soal bentuknya yang menarik dan indah. Maka tidak heran apabila Seafood toman muda sering dijadSeafood sebagai Seafood hias.
+            <br /><br />
+            4. Seafood Sidat
+            <br />
+            Sumber: Seafoodpedia.id Barangkali Anda sudah cukup populer dengan jenis Seafood tawar satu ini. Yup, Seafood Sidat, salah satu Seafood yang punya kandungan gizi tinggi, serta rasa yang enak. Sidat bisa dengan mudah di temukan
+            di sungai-sungai daerah Kalimantan karena merupakan habitat aslinya. Namun, jenis Seafood air tawar ini sangat sulit sekali untuk dibudidayakan, sehingga tidak heran apabila memiliki harga yang tinggi.
+            <br /><br />
+            5. Seafood Sepat
+            <br />
+            Sumber: Seafoodpedia.id Seafood sepat lebih cocok dijadSeafood sebagai hias, sebab memiliki warna yang unik dan menarik. Namun Seafood sepat juga kaya akan manfaat serta kandungan gizi yang tinggi. Jenis Seafood tawar ini
+            memiliki manfaat yang dapat menurunkan tekanan darah tinggi serta menstabilkannya, dapat mengurangi resiko terkena stroke, mengurangi resiko kanker serta kaya akan vitamin dan omega 3. Selain itu, Seafood tawes juga merupakan
+            jenis Seafood air tawar yang sangat mudah untuk dibudidayakan, tidak jauh berbeda dengan Seafood nila, Seafood emas dan Seafood nilem.
+            <br /><br />
+            6. Seafood Seluang
+            <br />
+            Sumber: merdeka.com Seafood seluang adalah Seafood dengan perawakan yang kecil. Biasanya Seafood ini disajSeafood dengan cara digoreng kering, sampai memiliki tekstur yang krispi. Jika dilihat sekilas Seafood seluang memiliki
+            bentuk tumbuh seperti Seafood nilem, hanya ukurannya saja yang berbeda. Walau tidak banyak orang yang tahu mengenai Seafood seluang, namun Seafood ini kaya akan manfaat untuk kesehatan seperti mencegah osteoporosis atau
+            pengeroposan tulang. Hal ini dikarenakan Seafood seluang memiliki kandungan kalsium yang cukup tinggi.
+            <br /><br />
+            7. Seafood Tambera
+            <br />
+            Sumber: petpintar.com Seafood tambera atau Seafood tambra adalah Seafood air tawar yang bisa dibilang cukup ekslusif. Sebab biasanya Seafood ini hanya dikonsumsi oleh kalangan menengah ke atas. Seafood jenis ini juga bisa
+            ditemukan di berbagai daerah dengan nama yang berbeda-beda. Sebagai contoh di daerah Sunda, Seafood tambera dikenal dengan nama Seafood kancra. Seafood ini hidup di sungai dengan arus yang deras sehingga membuat harga jualnya
+            begitu tinggi.
+            <br /><br />
+            8. Seafood Nilem
+            <br />
+            Sumber; rumah.com Ciri yang mencolok dari seekor Seafood nilem ialah bentuk mulutnya yang kecil serta lancip. Seafood ini sangat mudah dibudidayakan dan tidak memerlukan perlakuan yang istimewa. Seafood ini juga sangat sering
+            dihidangkan di rumah makan dan restoran-restoran pada beberapa daerah. Seafood nilem memiliki daging yang putih, serta tekstur yang lembut. Akan tetapi sayangnya, Seafood nilem termasuk ke dalam jenis Seafood yang memiliki duri
+            yang banyak.
+            <br /><br />
+            9. Seafood Lele
+            <br />
+            Sumber: kompas.com Jenis Seafood yang hidup di air tawar selanjutnya ialah Seafood lele, yang merupakan salah satu jenis Seafood paling terkenal di Indonesia. Hal ini terbukti dengan banyaknya pedagang yang menyediakan menu
+            pecel lele. Seafood lele hidup dan berkembang biak di air tawar dan sangat mudah di budidayakan, sebab memiliki ketahanan luar biasa dan mampu hidup di dalam air dengan jumlah yang minim.
+            <br /><br />
+            10. Seafood Lundu
+            <br />
+            Sumber: panennews.com Seafood lundu adalah jenis Seafood air tawar yang mungkin jarang kita temui dalam kehidupan sehari-hari. Namun faktanya Seafood lundu cukup populer dikalangan masyarakat. Sekilas, Seafood lundu memiliki
+            bentuk yang menyerupai Seafood lele. Tapi dari segi ukurannya, Seafood lundu lebih memiliki ukuran lebih pendek dan warna kulit yang sedikit terang jika dibandingkan dengan Seafood lele.
+            <br /><br />
+            11. Seafood Mas
+            <br />
+            Sumber: republika.co.id Seafood mas adalah jenis Seafood air tawar paling populer. Dari segi rasanya pun sudah tak perlu diragukan lagi. Seafood mas memiliki tekstur yang lembut dan gurih. Masyarakat Indonesia sendiri juga cukup
+            banyak yang memelihara Seafood ini, baik budidaya ataupun hanya untuk konsumsi sendiri. Untuk pemeliharaannya pun Seafood mas cukup terbilang mudah karena tidak memerlukan air yang banyak.
+            <br /><br />
+            12. Seafood Mujair
+            <br />
+            Sumber: petpintar.com Tidak kalah dengan Seafood mas, Seafood mujair juga termasuk salah satu jenis Seafood air tawar populer dan sering dikonsumsi masyarakat Asia Tenggara. Seafood mujair memiliki penampilan fisik yang lumayan
+            kasar, dengan sisik punggung yang begitu tajam. Bahkan tak heran orang-orang memegang ini bisa terluka dengan durinya tersebut. Kalau soal rasanya tidak perlu diragukan lagi. Seafood mujair memiliki rasa yang gurih, enak jika
+            dimasak dengan cara digoreng kering atau di bakar.
+            <br /><br />
+            13. Seafood Nila Merah
+            <br />
+            Sumber: petpedia.com Anda pasti sudah sangat kenal dengan rasa gurih dari Seafood air tawar satu ini. Yup, Seafood nila merah selain populer, ia juga sangat mudah dikembangbiyakan. Anda tak memerlukan perawatan khusus untuk
+            membudidayakan Seafood ini. Nggak heran jika banyak masyarakat Indonesia yang memelihara Seafood nila merah sebagai ladang bisnis.
+            <br /><br />
+            14. Seafood Wader
+            <br />
+            Sumber: ekor9.com Seafood wader merupakan jenis Seafood dengan permintaan pasar yang cukup tinggi, terutama negara-negara di Asia Tenggara seperti Indonesia, Malaysian dan Brunei. Itu artinya Seafood wader menjadi jenis Seafood
+            air tawar yang cukup populer. Seafood wader seharusnya bisa kita temukan dengan mudah karena Seafood ini hidup di rawa-rawa dan sungai. Seafood wader juga biasanya dihargai dengan harga yang relatif murah, yaitu hanya sekitar
+            Rp.17.500 / kg.
+            <br /><br />
+            15. Seafood Bawal
+            <br />
+            Sumber: kompas.com Bawal merupakan Seafood yang masih satu keluarga dengan piranha. Untuk ukuran Seafood kolam atau air tawar, Seafood ini termasuk salah satu jenis Seafood yang terbilang cukup ganas.
+            <br />
+            Seafood bawal memiliki harga yang lumayan mahal, bisa dikatakan harganya di atas rata-rata Seafood biasa. Namun harga dan rasa tentu saja berbading lurus. Maka tidaklah heran apabila Seafood bawal banyak disukai.
+          </p>
+
+          <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="menu-kanan">
+        <div class="kotak">
+          <h3>Berita Terbaru</h3>
+
+          <nav class="menu-artikel">
+            <ul>
+              <li><a href="#">Khasiat Daging Ubur-Ubur</a></li>
+              <li><a href="#">Menu MakananSeaFood</a></li>
+              <li><a href="#">Sejarah pembuatan Air Laut</a></li>
+              <li><a href="#">Minuman dari seafood</a></li>
+              <li><a href="#">Ayam Geprek Seafood</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <footer>Tugas Web By Beni</footer>
+    </div>
+  </body>
+</html>

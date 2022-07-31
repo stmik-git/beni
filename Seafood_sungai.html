@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Web Beni</title>
+    <style type="text/css">
+       {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: gainsboro;
+      }
+
+      .badan-utama {
+        max-width: 1080px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 15px;
+        overflow: hidden;
+      }
+
+      header {
+        background-color: crimson;
+        color: white;
+        padding: 20px;
+      }
+
+      header h2 {
+        margin-bottom: 7px;
+        font-size: 35px;
+      }
+
+      .navigasi ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkorange;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .navigasi li {
+        float: left;
+      }
+
+      .navigasi li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      .navigasi li a:hover {
+        background-color: red;
+        transition-duration: 2s;
+      }
+
+      .banner {
+        margin-bottom: 15px;
+      }
+
+      .banner img {
+        display: block;
+        width: 100%;
+        height: 330px;
+      }
+
+      .kotak {
+        border: 1px solid gainsboro;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      .kotak h3 {
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 13px;
+      }
+
+      .kotak img {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .kotak p {
+        margin-bottom: 10px;
+      }
+
+      .menu-kiri {
+        width: 250px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah {
+        width: 530px;
+        margin-right: 10px;
+        float: left;
+      }
+
+      .menu-tengah h3 {
+        background: none;
+        color: crimson;
+        margin-bottom: 0;
+      }
+
+      .tanggal-posting {
+        color: gray;
+        text-align: right;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .tombol {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        width: 120px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .tombol:hover {
+        background-color: black;
+        transition-duration: 2s;
+      }
+
+      .tombol-pesan {
+        background-color: green;
+      }
+
+      .tombol-lengkap {
+        background-color: darkorange;
+      }
+
+      .menu-kanan {
+        width: 250px;
+        float: left;
+      }
+
+      .menu-kanan,
+      .menu-kiri,
+      .menu-tengah {
+        margin-bottom: 15px;
+      }
+
+      footer {
+        clear: both;
+        background-color: crimson;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .menu-artikel ul {
+        list-style-type: none;
+      }
+
+      .menu-artikel ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 13px;
+        border-bottom: 1px solid gainsboro;
+        margin-bottom: 12px;
+        color: black;
+      }
+
+      .menu-artikel ul li a:hover {
+        color: darkorange;
+        border-bottom: 5px double chocolate;
+        transition-duration: 2s;
+      }
+
+      /*untuk tablet*/
+      @media screen and (max-width: 1080px) {
+        .badan-utama {
+          width: 100%;
+        }
+
+        .menu-kiri {
+          width: 25%;
+        }
+
+        .menu-tengah {
+          width: 68%;
+          float: right;
+        }
+
+        .menu-kanan {
+          clear: both;
+          float: none;
+          width: 100%;
+        }
+      }
+
+      /*untuk android*/
+      @media screen and (max-width: 780px) {
+        header h2,
+        header p {
+          text-align: center;
+        }
+
+        .menu-kiri,
+        .menu-kanan,
+        .menu-tengah {
+          float: none;
+          width: 100%;
+        }
+
+        .navigasi li {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badan-utama">
+      <header>
+        <h2>Web Seafood</h2>
+        <p>Web Untuk Mengetahui segala jenis-jenis Seafood</p>
+      </header>
+
+      <nav class="navigasi">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="pesan.html">Pesan</a></li>
+          <li><a href="Seafood_laut.html">Seafood Laut</a></li>
+          <li><a href="Seafood_sungai.html">Seafood Sungai</a></li>
+          <li><a href="Seafood_tawar.html">Seafood Tawar</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-kiri">
+        <div class="kotak">
+          <h3>Pemesanan</h3>
+          <p>Isi Form Pemesanan dengan Klik Tombol di bawah ini</p>
+
+          <a class="tombol tombol-pesan" href="#">Pesan</a>
+        </div>
+      </div>
+
+      <div class="menu-tengah">
+        <div class="kotak">
+          <h3>Jenis-Jenis Seafood Sungai</h3>
+          <span class="tanggal-posting"> Diposting pada 11.04 WIB, 29 April 2022 </span>
+
+          <img src="sungai.webp" alt="Seafood Sungai" />
+
+          <p>
+            1. Seafood Sapu Sapu
+            <br />
+            transkepri.com Seafood-kan dari genus Hypostomus adalah jenis Seafood sapu-sapu. Mereka banyak ditemukan di perairan air tawar terutama di sungai dan anak sungai.
+            <br />
+            Sapu-sapu yang banyak dijadSeafood Seafood hias akuarium di Indonesia berasal dari Amerika.
+            <br />
+            Jenis sapu-sapu tersebut termasuk keluarga loricariidae. Mereka memiliki tipe mulut penyedot karena itu mereka sering disebut sucker fish dalam bahasa Inggris.
+            <br />
+            Mulutnya tidak seperti Seafood kebanyakan yang berada di depan moncongnya, tetapi letak mulutnya berada di bagian bawah. Mulut sapu-sapu bekerja seperti penyedot debu. Jenis ini sebenarnya merupakan Seafood omnivora, tetapi
+            mereka terbiasa mencari cari sisa alga atau lumut di malam hari. Seafood ini memiliki ukuran tubuh mulai dari 3 cm dan bisa tumbuh hingga sepanjang 100 cm.
+            <br /><br />
+            2. Seafood Loach Batu
+            <br />
+            en.wikipedia.org Loach batu banyak tersebar di daerah anak sungai berair jernih yang berpasir dan berkerikil. Bentuk Seafood ini sangat unik karena sekilas mirip dengan belut. Kepala mereka sangat mirip dengan belut hanya saja
+            lebih keras. Seafood ini merupakan hewan nokturnal yang biasa mencari makn di malam hari. Mulutnya bekerja seperti mulut Seafood sapu-sapu saat mereka mencari makan. Di bagian bawah mulut terdapat tiga pasang kumis pendek.
+            Memiliki nama latin Barbatula barbatula Seafood ini memiliki panjang tubuh sektar 14 cm. Dinamakan loach batu karena tampilan mereka yang mirip dengan batu. Seafood ini juga sering berkamuflase sebagai batu untuk mengelabui
+            mangsa dan predatornya.
+            <br /><br />
+            3. Seafood Obama beritagar.id Seafood ini merupakan jenis Seafood darter yang menjadi hewan endemik di Utara Amerika Serikat tepatnya di Sungai Duck dan Sungai Buffalo, Tenesse. Jenis ini ditemukan saat Obama menjabat menjadi
+            presiden. Peneliti menemukan Seafood ini saat mereka mempelajari jenis Seafood darter dan menamakannya atas nama Obama. Selain Seafood obama ada 4 jenis darter lain yang juga dinamakan atas nama presiden dan wakil presiden AS.
+            Seafood ini memiliki panjang tubuh sekita 5 cm untuk pejantan dan 4,5 untuk betinanya.
+            <br /><br />
+            4. Seafood Karper id.wikipedia.org Seafood mas karper atau yang dalam bahasa Inggrisnya disebut dace merupakan Seafood yang hidup di sungai-sungai di Asia dan Eropa. Populasi mereka sangat banyak bahkan sering ditangkap untuk
+            dijadSeafood sebagai umpan untuk Seafood besar. Panjang maksimum dari Seafood ini adalah 40 cm dengan berat sekitar 1 kg. usia hidup mereka hingga 16 tahun lamanya. Mereka senang hidup di air yang jernih dan tenang. Di
+            Indonesia, karper lebih dikenal dengan nama Seafood mas. Seafood ini memiliki nilai ekonomis yang tinggi dan digemari banyak orang. Jika dilihat dari fungsinya, Seafood karper dibedakan menjadu dua yakni Seafood yang dikonsumsi
+            dan yang dijadSeafood Seafood hias.
+            <br /><br />
+            5. Seafood Minnow alamSeafood.com Minnow sering disebut wader oleh orang Indonesia. Di beberapa supermarket mereka dijual matang dalam bentuk wader crispy. Rata-rata Seafood minnow memiliki panjang tubuh 6 cm, tetapi ada yang
+            tumbuh hingga 13 cm. Seafood ini memiliki berbagai macam variasi warna yang mana warna tersebut sesuai dengan kondisi air di lingkungan tempat mereka tinggal. Jika kamu pemula da ingin mencoba memulai hobi Seafood dan akuarium,
+            maka Seafood minnow ini bisa menjadi pilihan karena karakteristiknya yang tahan dengan kualitas air. Selain itu, minnow juga termasuk Seafood yang bisa damai dengan berbagai jenis Seafood lain jika digabungkan di akuarium.
+            <br /><br />
+            6. Tawes ✓ 10 Jenis Seafood Sungai Yang Hanya Ada Di Perairan Darat id.wikipedia.org Tawes merupakan jenis Seafood air tawar yang populer dan banyak dibudidayakan karena digemari oleh banyak orang dan rasa olahannya yang enak.
+            Seafood ini termasuk yang mudah diperlihara dan tidak memerlukan aneka macam teknik yang rumit dan mahal. Memiliki sifat herbivora, Seafood tawes utamanya memakan tumbuh-tumbuhan, atau dedaunan yang jatuh ke lingkungan mereka.
+            Namun, meskipun dikenal sebagai Seafood herbivora, jika Seafood sudah cukup besar bisa juga diberi makan makanan buatan seperti pelet. Perkembangan tumbuh tawes sendiri bergantung pada pola makan yang cukup dan juga teratur agar
+            bisa tumbuh berkembang lebih cepat.
+            <br /><br />
+            7. Nila tokopedia.com Sekilas, Seafood nila terlihat seperti Seafood mujair, tapi sebenarnya berbeda. Nila sekarang ini menjadi salah satu yang populer menjadi peliharaan di kolam air tawar. Seafood ini dapat tumbuh dengan
+            ukuran mencapai 30 cm dengan tubuhnya yang memiliki warna hitam atau keabuan dan terdapat belang yang mengabur. Sebagai Seafood konsumsi air tawar, nila memiliki berbagai macam jenis yang tiap jenisnya memiliki tingkat kecepatan
+            pertumbuhan, ketahanan air yang berbeda. Beberapa jenis nila diantaranya seperti merah, srSeafooddi, jatimbulan, larasati, citralada, gesit, BEST, GIFT, anjani, dan masih banyak lagi.
+            <br /><br />
+            8. Hampal id.wikipedia.org Hampal dikenal sebagai Seafood air tawar kerabat Seafood mas dan persebaran Seafood ini di Asia Tenggara termasuk Indonesia (tepatnya bagian barat). Habitat asli Seafood ini adalah di sungai-sungai
+            kecil dan besar dengan air yang deras dan jernih serta bagian dasar atau bawahnya berpasir. Selain sebagai Seafood konsumsi air tawar, hampal juga termasuk jenis Seafood yang digemari oleh para pemancing yang memancing langsung
+            di habitatnya. Dinamakan hampal karena merujuk pada bagian sisiknya yang memiliki ukuran besar.
+            <br /><br />
+            9. Patin ringtimesbali.pikiran-rakyat.com Seafood patin menjadi salah satu jenis Seafood yang digemari oleh banyak orang dan banyak dibudidayakan di Indonesia. Sebagai salah satu jenis Seafood asli dari perairan Indonesia, patin
+            memilik tubuh denga bentuk yang memanjang dan memiliki warna putih keperakan. Ciri lainnya adalah bagian punggung patin memiliki warna kebiruan, kepala yang cukup kecil, dan Seafood ini tidak memliki sisik. Habitat asli Seafood
+            patin adalah sungao besar, muara sungai dan juga danau. Jika dilihat karakteristik mulutnya yang agak ke bawah, kemungkinan Seafood ini hidup di dasar air.
+            <br /><br />
+            10. Gabus cakrawalarafflesia.com Seafood gabus sebenarnya termasuk jenis Seafood predatow air tawar yang habitat aslinya berada di danau, sungai, rawa atau bahkan sawah. Meskipun Seafood gabus biasa ditemukan dihabitat aslinya,
+            tapi Seafood ini juga seringkali terbawa banjir dan bisa masuk ke parit sekitar rumah atau kolam peliharaan. Makanan yang dikonsumsi Seafood ini bermacam-macam, mulai dari Seafood kecil, serangga, berudu, aneka hewan air yang
+            ukurannya kecil atau bahkan kodok keicl. Sebagai jenis predator, ukuran dan ciri fisik gabus pada umumnya mungkin tidak semengerSeafood seperti arapaima atau alligator gar.
+          </p>
+
+          <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="menu-kanan">
+        <div class="kotak">
+          <h3>Berita Terbaru</h3>
+
+          <nav class="menu-artikel">
+            <ul>
+              <li><a href="#">Khasiat Daging Ubur-Ubur</a></li>
+              <li><a href="#">Menu MakananSeaFood</a></li>
+              <li><a href="#">Sejarah pembuatan Air Laut</a></li>
+              <li><a href="#">Minuman dari seafood</a></li>
+              <li><a href="#">Ayam Geprek Seafood</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <footer>Tugas Web By Beni</footer>
+    </div>
+  </body>
+</html>
